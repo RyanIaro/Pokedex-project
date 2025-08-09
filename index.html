@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <bds />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+    <title>RyanIaro's Pokedex</title>
+  </head>
+  <body>
+     <main class="main">
+      <header class="header-home">
+        <div class="container">
+          <div class="logo-wrapper">
+            <img src="assets/pokeball.svg" alt="pokeball"/>
+            <h1>Pokedex</h1>
+          </div>
+          <div class="search-wrapper">
+            <img class="search-icon" src="assets/icons/search.svg" alt="search icon"/>
+            <input class="search-bar" type="text" name="searchbar" id="searchbar" placeholder="Pokemon name, number or type"/>
+            <img class="clear-icon" src="assets/cross.svg" alt="clear icon"/>
+          </div>
+          <div class="sort-wrapper">
+            <p class="body2-fonts">Sort by:</p>
+            <div class="sort-wrap">
+              <div>
+                <div>
+                  <input
+                    type="radio"
+                    name="filters" 
+                    id="number"
+                    value="number"
+                    checked
+                  >
+                  <label for="number">Number</label>
+                </div>
+                <div>
+                  <input
+                  type="radio"
+                  name="filters" 
+                  id="name"
+                  value="name"
+                  >
+                  <label for="name">Name</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="filter-wrapper">
+            <button class="filter-button">
+              <img src="assets/icons/filter.svg"/>
+              Filter
+            </button>
+          </div> -->
+        </div>
+      </header>
+      <section class="pokemon-list">
+        <div class="container">
+          <div class="list-wrapper"></div>
+        </div>
+        <div id="not-found-message">Pokemon not found</div>
+      </section>
+     </main>
+    <div class="footer">
+      <a href="https://bigdevsoon.me" target="_blank" rel="noopener noreferrer"
+        >Project by BigDevSoon</a
+      >
+      |
+      <span>Built with ❤️ by [RyanIaro]</span>
+    </div>
+  </body>
+</html>
