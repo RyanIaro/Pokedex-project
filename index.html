@@ -2,70 +2,69 @@
 <html>
   <head>
     <bds />
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="style.css" />
     <script src="index.js" defer></script>
     <title>RyanIaro's Pokedex</title>
   </head>
   <body>
      <main class="main">
-      <header class="header-home">
+      <header class="header home">
         <div class="container">
           <div class="logo-wrapper">
             <img src="assets/pokeball.svg" alt="pokeball"/>
             <h1>Pokedex</h1>
           </div>
           <div class="search-wrapper">
-            <img class="search-icon" src="assets/icons/search.svg" alt="search icon"/>
-            <input class="search-bar" type="text" name="searchbar" id="searchbar" placeholder="Pokemon name, number or type"/>
-            <img class="clear-icon" src="assets/cross.svg" alt="clear icon"/>
-          </div>
-          <div class="sort-wrapper">
-            <p class="body2-fonts">Sort by:</p>
-            <div class="sort-wrap">
-              <div>
-                <div>
-                  <input
+            <div class="search-wrap">
+              <img class="search-icon" src="assets/search.svg" alt="search icon"/>
+              <input class="search-input body3-fonts" type="text" name="searchbar" id="search-input" placeholder="Pokemon name or number"/>
+              <img class="search-close-icon" src="assets/cross.svg" id="search-close-icon" alt="cross icon"/>
+            </div>
+            <div class="sort-wrapper">
+              <div class="sort-wrap">
+                <img src="assets/sorting.svg" alt="sorting" class="sort-icon" id="sort-icon">
+              </div>
+              <div class="filter-wrapper">
+                <p class="body2-fonts">Sort by:</p>
+                <div class="filter-wrap">
+                  <div>
+                    <input
                     type="radio"
                     name="filters" 
                     id="number"
                     value="number"
                     checked
-                  >
-                  <label for="number">Number</label>
-                </div>
-                <div>
-                  <input
-                  type="radio"
-                  name="filters" 
-                  id="name"
-                  value="name"
-                  >
-                  <label for="name">Name</label>
+                    >
+                    <label for="number" class="body3-fonts">Number</label>
+                  </div>
+                  <div>
+                    <input
+                    type="radio"
+                    name="filters" 
+                    id="name"
+                    value="name"
+                    >
+                    <label for="name" class="body3-fonts">Name</label>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <!-- <div class="filter-wrapper">
-            <button class="filter-button">
-              <img src="assets/icons/filter.svg"/>
-              Filter
-            </button>
-          </div> -->
         </div>
       </header>
       <section class="pokemon-list">
         <div class="container">
           <div class="list-wrapper"></div>
         </div>
-        <div id="not-found-message">Pokemon not found</div>
+        <div id="not-found-message">No Pokemon found</div>
       </section>
+      <div class="footer">
+        <a href="https://bigdevsoon.me" target="_blank" rel="noopener noreferrer"
+          >Project by BigDevSoon</a
+        >
+        |
+        <span>Built with ❤️ by [RyanIaro]</span>
+      </div>
      </main>
-    <div class="footer">
-      <a href="https://bigdevsoon.me" target="_blank" rel="noopener noreferrer"
-        >Project by BigDevSoon</a
-      >
-      |
-      <span>Built with ❤️ by [RyanIaro]</span>
-    </div>
   </body>
 </html>

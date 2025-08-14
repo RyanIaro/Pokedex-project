@@ -180,9 +180,9 @@ function displayPokemonDetails(pokemon) {
   const statNameMapping = {
     hp:"HP",
     attack:"ATK",
-    defence:"DEF",
+    defense:"DEF",
     "special-attack":"SATK",
-    "special-defence":"SDEF",
+    "special-defense":"SDEF",
     speed: "SPD",
   };
 
