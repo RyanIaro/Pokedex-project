@@ -157,6 +157,10 @@ body {
   position: relative;
 }
 
+.sort-wrapper:hover {
+  cursor: pointer;
+}
+
 .sort-wrap {
   background-color: var(--grayscale-white);
   border-radius: 100%;
@@ -519,7 +523,6 @@ div#not-found-message {
 }
 
 .details-main.main {
-  height: max-content;
   border-color: transparent;
   background-color: transparent;
 }

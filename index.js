@@ -12,6 +12,8 @@ const numberFilter = document.querySelector("#number");
 const nameFilter = document.querySelector("#name");
 const clearIcon = document.querySelector(".search-close-icon");
 const notFoundMessage = document.querySelector("#not-found-message");
+const sortWrapper = document.querySelector(".sort-wrapper");
+const filterWrapper = document.querySelector(".filter-wrapper");
 
 let allPokemons = [];
 
@@ -96,6 +98,8 @@ function handleSearch() {
 
   if (searchInput.value !== '') {
     clearIcon.style.display = "block";
+  } else {
+    clearIcon.style.display = "none";
   }
 }
 
@@ -104,4 +108,9 @@ clearIcon.addEventListener("click", function() {
   clearIcon.style.display = "none";
   displayPokemons(allPokemons);
   notFoundMessage.style.display = "none";
+});
+
+sortWrapper.addEventListener("click", function() {
+  filterWrapper.classList.toggle("filter-wrapper-open");
+  document.querySelector("body").classList.toggle("filter-wrapper-overlay")
 });
