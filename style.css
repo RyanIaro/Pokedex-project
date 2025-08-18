@@ -147,7 +147,9 @@ body {
 }
 
 .search-wrap > input {
-  width: 80%;
+  background-color: transparent;
+  height: 100%;
+  width: 90%;
   border: none;
 }
 
@@ -172,10 +174,6 @@ body {
   right: 1rem;
   display: none;
   cursor: pointer;
-}
-
-.search-close-icon-visible {
-  display: block;
 }
 
 .filter-wrapper {
@@ -241,9 +239,8 @@ body {
   background-color: var(--grayscale-white);
   box-shadow: var(--drop-shadow-inner);
   border-radius: 0.75rem;
-  min-height: calc(85.5% - 1rem);
-  width: calc(100% - 1rem);
-  max-height: 100px;
+  height: 78%;
+  width: 95%;
   overflow-y: auto;
 }
 
@@ -535,7 +532,7 @@ div#not-found-message {
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 10px;
+  padding: 6px;
   text-align: center;
 }
 

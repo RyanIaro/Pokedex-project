@@ -96,14 +96,12 @@ function handleSearch() {
 
   if (searchInput.value !== '') {
     clearIcon.style.display = "block";
-  } else {
-    clearIcon.style.display = "none";
   }
 }
 
-clearIcon.addEventListener("click", function(e) {
+clearIcon.addEventListener("click", function() {
   searchInput.value = '';
   clearIcon.style.display = "none";
   displayPokemons(allPokemons);
   notFoundMessage.style.display = "none";
-})
+});
