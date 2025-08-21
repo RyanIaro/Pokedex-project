@@ -363,13 +363,26 @@ body {
   gap: 16px;
 }
 
-.power-wrapper > p {
-  border-radius: 10px;
-  padding: 2px 8px;
-  font-weight: var(--font-weight-bold);
+.power-wrapper > div {
+  display: flex;
+  height: 32px;
+  width: 64px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
   color: var(--grayscale-white);
-  text-transform: capitalize;
   background-color: #74cb48;
+}
+
+.power-wrapper > div > p {
+  font-weight: var(--font-weight-bold);
+  text-transform: capitalize;
+}
+
+.power-wrapper > div > img {
+  width: 16px;
+  height: 16px;
+  margin: 0 4px;
 }
 
 .pokemon-details.move p {
