@@ -20,6 +20,6 @@ It's a project I picked up and wrote in HTML, CSS & JavaScript for practice purp
 ## 🚀 Getting Started
 1. Clone the repository:
 ```bash
-git clone https://github.com/your-username/pokedex.git
+git clone https://github.com/RyanIaro/Pokedex-project.git
 ```
 2. Open **index.html** in your browser
