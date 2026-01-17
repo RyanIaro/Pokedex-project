@@ -5,6 +5,8 @@ This is a project from BigDevSoon consisting of a Pokedex using [PokéAPI](pokea
 
 It's a project I picked up and wrote in HTML, CSS & JavaScript for practice purposes to strengthen my fundamentals in JavaScript and DOM manipulation.
 
+🔗Live demo: https://ryan-iaros-pokedex.netlify.app
+
 ## 🛠️ Tech Stack
 - HTML
 - CSS
